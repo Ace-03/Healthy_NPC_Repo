@@ -247,6 +247,10 @@ GameObject:
   - component: {fileID: 535107303}
   - component: {fileID: 535107302}
   - component: {fileID: 535107301}
+  - component: {fileID: 535107309}
+  - component: {fileID: 535107308}
+  - component: {fileID: 535107307}
+  - component: {fileID: 535107306}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -270,8 +274,6 @@ MonoBehaviour:
   turnSpeed: 90
   startingHp: 100
   hpBarSlider: {fileID: 1105818258}
-  deathParticlePrefab: {fileID: 5139466195945210429, guid: dee25ef51a9b5ce4d97fd655c61cd272, type: 3}
-  currentHp: 0
 --- !u!65 &535107302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -349,6 +351,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535107306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e14a50fa27eddf47b91a32ef08cec24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthInHits: 5
+  invulnerabilityTimeAfterEachHit: 5
+--- !u!114 &535107307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a2f84bbf526911418ccf87f6d9153d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+--- !u!114 &535107308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c50e76960b8bc8a4c84d16d3e5dcfc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathParticlePrefab: {fileID: 5139466195945210429, guid: dee25ef51a9b5ce4d97fd655c61cd272, type: 3}
+--- !u!114 &535107309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2649279aee2514ead85a9030ce5742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
